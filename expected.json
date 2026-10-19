@@ -1,0 +1,701 @@
+[
+ {
+  "fn": "signTruth",
+  "args": [
+   "-7",
+   "3"
+  ],
+  "expected": "-7 divided by 3: truncated division (quotient rounds toward zero) gives quotient -2 and remainder -1, floored division (quotient rounds down) gives -3 and 2, and Euclidean division (remainder never negative) gives -3 and 2. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "7",
+   "3"
+  ],
+  "expected": "7 divided by 3: truncated division (quotient rounds toward zero) gives quotient 2 and remainder 1, floored division (quotient rounds down) gives 2 and 1, and Euclidean division (remainder never negative) gives 2 and 1. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "7",
+   "-3"
+  ],
+  "expected": "7 divided by -3: truncated division (quotient rounds toward zero) gives quotient -2 and remainder 1, floored division (quotient rounds down) gives -3 and -2, and Euclidean division (remainder never negative) gives -2 and 1. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-7",
+   "-3"
+  ],
+  "expected": "-7 divided by -3: truncated division (quotient rounds toward zero) gives quotient 2 and remainder -1, floored division (quotient rounds down) gives 2 and -1, and Euclidean division (remainder never negative) gives 3 and 2. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "6",
+   "3"
+  ],
+  "expected": "6 divided by 3: truncated division (quotient rounds toward zero) gives quotient 2 and remainder 0, floored division (quotient rounds down) gives 2 and 0, and Euclidean division (remainder never negative) gives 2 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-6",
+   "3"
+  ],
+  "expected": "-6 divided by 3: truncated division (quotient rounds toward zero) gives quotient -2 and remainder 0, floored division (quotient rounds down) gives -2 and 0, and Euclidean division (remainder never negative) gives -2 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "0",
+   "5"
+  ],
+  "expected": "0 divided by 5: truncated division (quotient rounds toward zero) gives quotient 0 and remainder 0, floored division (quotient rounds down) gives 0 and 0, and Euclidean division (remainder never negative) gives 0 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "0",
+   "-5"
+  ],
+  "expected": "0 divided by -5: truncated division (quotient rounds toward zero) gives quotient 0 and remainder 0, floored division (quotient rounds down) gives 0 and 0, and Euclidean division (remainder never negative) gives 0 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "2",
+   "5"
+  ],
+  "expected": "2 divided by 5: truncated division (quotient rounds toward zero) gives quotient 0 and remainder 2, floored division (quotient rounds down) gives 0 and 2, and Euclidean division (remainder never negative) gives 0 and 2. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-2",
+   "5"
+  ],
+  "expected": "-2 divided by 5: truncated division (quotient rounds toward zero) gives quotient 0 and remainder -2, floored division (quotient rounds down) gives -1 and 3, and Euclidean division (remainder never negative) gives -1 and 3. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "2",
+   "-5"
+  ],
+  "expected": "2 divided by -5: truncated division (quotient rounds toward zero) gives quotient 0 and remainder 2, floored division (quotient rounds down) gives -1 and -3, and Euclidean division (remainder never negative) gives 0 and 2. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-2",
+   "-5"
+  ],
+  "expected": "-2 divided by -5: truncated division (quotient rounds toward zero) gives quotient 0 and remainder -2, floored division (quotient rounds down) gives 0 and -2, and Euclidean division (remainder never negative) gives 1 and 3. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "5",
+   "1"
+  ],
+  "expected": "5 divided by 1: truncated division (quotient rounds toward zero) gives quotient 5 and remainder 0, floored division (quotient rounds down) gives 5 and 0, and Euclidean division (remainder never negative) gives 5 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-5",
+   "1"
+  ],
+  "expected": "-5 divided by 1: truncated division (quotient rounds toward zero) gives quotient -5 and remainder 0, floored division (quotient rounds down) gives -5 and 0, and Euclidean division (remainder never negative) gives -5 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-5",
+   "-1"
+  ],
+  "expected": "-5 divided by -1: truncated division (quotient rounds toward zero) gives quotient 5 and remainder 0, floored division (quotient rounds down) gives 5 and 0, and Euclidean division (remainder never negative) gives 5 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "1000000000000",
+   "7"
+  ],
+  "expected": "1000000000000 divided by 7: truncated division (quotient rounds toward zero) gives quotient 142857142857 and remainder 1, floored division (quotient rounds down) gives 142857142857 and 1, and Euclidean division (remainder never negative) gives 142857142857 and 1. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-1000000000000",
+   "7"
+  ],
+  "expected": "-1000000000000 divided by 7: truncated division (quotient rounds toward zero) gives quotient -142857142857 and remainder -1, floored division (quotient rounds down) gives -142857142858 and 6, and Euclidean division (remainder never negative) gives -142857142858 and 6. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-1000000000000",
+   "-1000000000000"
+  ],
+  "expected": "-1000000000000 divided by -1000000000000: truncated division (quotient rounds toward zero) gives quotient 1 and remainder 0, floored division (quotient rounds down) gives 1 and 0, and Euclidean division (remainder never negative) gives 1 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "1",
+   "1000000000000"
+  ],
+  "expected": "1 divided by 1000000000000: truncated division (quotient rounds toward zero) gives quotient 0 and remainder 1, floored division (quotient rounds down) gives 0 and 1, and Euclidean division (remainder never negative) gives 0 and 1. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-1",
+   "1000000000000"
+  ],
+  "expected": "-1 divided by 1000000000000: truncated division (quotient rounds toward zero) gives quotient 0 and remainder -1, floored division (quotient rounds down) gives -1 and 999999999999, and Euclidean division (remainder never negative) gives -1 and 999999999999. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   " -7 ",
+   " 3 "
+  ],
+  "expected": "-7 divided by 3: truncated division (quotient rounds toward zero) gives quotient -2 and remainder -1, floored division (quotient rounds down) gives -3 and 2, and Euclidean division (remainder never negative) gives -3 and 2. The remainders differ, so the choice of division matters for these numbers."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "-0",
+   "3"
+  ],
+  "expected": "0 divided by 3: truncated division (quotient rounds toward zero) gives quotient 0 and remainder 0, floored division (quotient rounds down) gives 0 and 0, and Euclidean division (remainder never negative) gives 0 and 0. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "007",
+   "3"
+  ],
+  "expected": "7 divided by 3: truncated division (quotient rounds toward zero) gives quotient 2 and remainder 1, floored division (quotient rounds down) gives 2 and 1, and Euclidean division (remainder never negative) gives 2 and 1. All three remainders agree."
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "7",
+   "0"
+  ],
+  "expected": "ERR:the divisor must not be zero"
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "x",
+   "3"
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "7",
+   ""
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "1.5",
+   "3"
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "1000000000001",
+   "3"
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "7",
+   "-1000000000001"
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "signTruth",
+  "args": [
+   "+7",
+   "3"
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "9",
+   "7"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 9 and moving 7 steps lands on slot 4, after wrapping past the end 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "9",
+   "3"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 9 and moving 3 steps lands on slot 0, after wrapping past the end 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "9",
+   "2"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 9 and moving 2 steps lands on slot 11 without wrapping."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "0",
+   "-1"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 0 and moving -1 step lands on slot 11, after wrapping past the start 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "0",
+   "1"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 0 and moving 1 step lands on slot 1 without wrapping."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "3",
+   "0"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 3 and moving 0 steps lands on slot 3 without wrapping."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "3",
+   "-3"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 3 and moving -3 steps lands on slot 0 without wrapping."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "3",
+   "-4"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 3 and moving -4 steps lands on slot 11, after wrapping past the start 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "3",
+   "-15"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 3 and moving -15 steps lands on slot 0, after wrapping past the start 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "3",
+   "-27"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 3 and moving -27 steps lands on slot 0, after wrapping past the start 2 times."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "11",
+   "13"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 11 and moving 13 steps lands on slot 0, after wrapping past the end 2 times."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "11",
+   "1"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 11 and moving 1 step lands on slot 0, after wrapping past the end 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "5",
+   "24"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 5 and moving 24 steps lands on slot 5, after wrapping past the end 2 times."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "5",
+   "-24"
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 5 and moving -24 steps lands on slot 5, after wrapping past the start 2 times."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "1",
+   "0",
+   "5"
+  ],
+  "expected": "On a ring of 1 slot (slot 0 only), starting at 0 and moving 5 steps lands on slot 0, after wrapping past the end 5 times."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "1",
+   "0",
+   "0"
+  ],
+  "expected": "On a ring of 1 slot (slot 0 only), starting at 0 and moving 0 steps lands on slot 0 without wrapping."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "1",
+   "0",
+   "-1"
+  ],
+  "expected": "On a ring of 1 slot (slot 0 only), starting at 0 and moving -1 step lands on slot 0, after wrapping past the start 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "7",
+   "6",
+   "1"
+  ],
+  "expected": "On a ring of 7 slots (0 to 6), starting at 6 and moving 1 step lands on slot 0, after wrapping past the end 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "7",
+   "6",
+   "-1"
+  ],
+  "expected": "On a ring of 7 slots (0 to 6), starting at 6 and moving -1 step lands on slot 5 without wrapping."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "10",
+   "0",
+   "-10"
+  ],
+  "expected": "On a ring of 10 slots (0 to 9), starting at 0 and moving -10 steps lands on slot 0, after wrapping past the start 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "1000000000000",
+   "999999999999",
+   "1000000000000"
+  ],
+  "expected": "On a ring of 1000000000000 slots (0 to 999999999999), starting at 999999999999 and moving 1000000000000 steps lands on slot 999999999999, after wrapping past the end 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "3",
+   "1",
+   "-1000000000000"
+  ],
+  "expected": "On a ring of 3 slots (0 to 2), starting at 1 and moving -1000000000000 steps lands on slot 0, after wrapping past the start 333333333333 times."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   " 12 ",
+   " 9 ",
+   " 7 "
+  ],
+  "expected": "On a ring of 12 slots (0 to 11), starting at 9 and moving 7 steps lands on slot 4, after wrapping past the end 1 time."
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "0",
+   "0",
+   "1"
+  ],
+  "expected": "ERR:the number of slots must be a whole number from 1 to 1000000000000"
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "12",
+   "1"
+  ],
+  "expected": "ERR:the start must be a whole number from 0 to 11"
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "-1",
+   "1"
+  ],
+  "expected": "ERR:the start must be a whole number from 0 to 11"
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "-3",
+   "0",
+   "1"
+  ],
+  "expected": "ERR:the number of slots must be a whole number from 1 to 1000000000000"
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "x",
+   "1"
+  ],
+  "expected": "ERR:the start must be a whole number from 0 to 11"
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "12",
+   "9",
+   ""
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "ringTruth",
+  "args": [
+   "1000000000001",
+   "0",
+   "1"
+  ],
+  "expected": "ERR:the number of slots must be a whole number from 1 to 1000000000000"
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "17",
+   "5",
+   "6"
+  ],
+  "expected": "17 and 5 mod 6: both leave 5 (never negative), so they land on the same slot. Their difference 12 is 2 x 6."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "17",
+   "4",
+   "6"
+  ],
+  "expected": "17 and 4 mod 6: 5 and 4 (never negative), so they land on different slots. Their difference 13 is not a multiple of 6."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "-1",
+   "5",
+   "6"
+  ],
+  "expected": "-1 and 5 mod 6: both leave 5 (never negative), so they land on the same slot. Their difference -6 is -1 x 6."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "-7",
+   "2",
+   "3"
+  ],
+  "expected": "-7 and 2 mod 3: both leave 2 (never negative), so they land on the same slot. Their difference -9 is -3 x 3."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "-7",
+   "-1",
+   "3"
+  ],
+  "expected": "-7 and -1 mod 3: both leave 2 (never negative), so they land on the same slot. Their difference -6 is -2 x 3."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "0",
+   "0",
+   "1"
+  ],
+  "expected": "0 and 0 mod 1: both leave 0 (never negative), so they land on the same slot. Their difference 0 is 0 x 1."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "5",
+   "5",
+   "9"
+  ],
+  "expected": "5 and 5 mod 9: both leave 5 (never negative), so they land on the same slot. Their difference 0 is 0 x 9."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "5",
+   "-5",
+   "10"
+  ],
+  "expected": "5 and -5 mod 10: both leave 5 (never negative), so they land on the same slot. Their difference 10 is 1 x 10."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "5",
+   "-5",
+   "7"
+  ],
+  "expected": "5 and -5 mod 7: 5 and 2 (never negative), so they land on different slots. Their difference 10 is not a multiple of 7."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "100",
+   "0",
+   "10"
+  ],
+  "expected": "100 and 0 mod 10: both leave 0 (never negative), so they land on the same slot. Their difference 100 is 10 x 10."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "0",
+   "100",
+   "10"
+  ],
+  "expected": "0 and 100 mod 10: both leave 0 (never negative), so they land on the same slot. Their difference -100 is -10 x 10."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "1",
+   "2",
+   "1"
+  ],
+  "expected": "1 and 2 mod 1: both leave 0 (never negative), so they land on the same slot. Their difference -1 is -1 x 1."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "-3",
+   "3",
+   "6"
+  ],
+  "expected": "-3 and 3 mod 6: both leave 3 (never negative), so they land on the same slot. Their difference -6 is -1 x 6."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "1000000000000",
+   "-1000000000000",
+   "7"
+  ],
+  "expected": "1000000000000 and -1000000000000 mod 7: 1 and 6 (never negative), so they land on different slots. Their difference 2000000000000 is not a multiple of 7."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "999999999999",
+   "-1",
+   "1000000000000"
+  ],
+  "expected": "999999999999 and -1 mod 1000000000000: both leave 999999999999 (never negative), so they land on the same slot. Their difference 1000000000000 is 1 x 1000000000000."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   " 17 ",
+   " 5 ",
+   " 6 "
+  ],
+  "expected": "17 and 5 mod 6: both leave 5 (never negative), so they land on the same slot. Their difference 12 is 2 x 6."
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "17",
+   "5",
+   "0"
+  ],
+  "expected": "ERR:the modulus must be a whole number from 1 to 1000000000000"
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "17",
+   "5",
+   "-6"
+  ],
+  "expected": "ERR:the modulus must be a whole number from 1 to 1000000000000"
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "x",
+   "5",
+   "6"
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "17",
+   "",
+   "6"
+  ],
+  "expected": "ERR:each entry must be a whole number from -1000000000000 to 1000000000000"
+ },
+ {
+  "fn": "matchTruth",
+  "args": [
+   "17",
+   "5",
+   "1000000000001"
+  ],
+  "expected": "ERR:the modulus must be a whole number from 1 to 1000000000000"
+ }
+]
